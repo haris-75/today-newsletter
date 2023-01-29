@@ -1,10 +1,10 @@
 import React from 'react';
 import SectionHeader from '../Shared/SectionHeader';
-import CelebImg1 from '../../assets/img/celebrity/celebrity-1.svg';
-import CelebImg2 from '../../assets/img/celebrity/celebrity-2.svg';
-import CelebImg3 from '../../assets/img/celebrity/celebrity-3.svg';
-import CelebImg4 from '../../assets/img/celebrity/celebrity-4.svg';
-import CelebImg5 from '../../assets/img/celebrity/celebrity-5.svg';
+import CelebImg1 from '../../assets/img/celebrity/celebrity-1.png';
+import CelebImg2 from '../../assets/img/celebrity/celebrity-2.png';
+import CelebImg3 from '../../assets/img/celebrity/celebrity-3.png';
+import CelebImg4 from '../../assets/img/celebrity/celebrity-4.png';
+import CelebImg5 from '../../assets/img/celebrity/celebrity-5.png';
 import ArticleHeader from '../Shared/ArticleHeader';
 
 export default function CelebrityPage() {
@@ -28,7 +28,7 @@ export default function CelebrityPage() {
           {[1, 2, 3, 4, 5].map((element) => (
             <div className="celebrity-img-wrapper" key={'celem-img' + element}>
               <span>{element}</span>
-              <img src={getCelebImg(element)} alt="celeb-img-1" />
+              <img width={185} src={getCelebImg(element)} alt="celeb-img-1" />
               <ArticleHeader
                 btnText={'Vladmir Putin'}
                 descriptionText={['Meals on wheels best', 'in the UAE']}

@@ -1,11 +1,11 @@
 import React from 'react';
 import SectionHeader from '../Shared/SectionHeader';
-import RecipeImg1 from '../../assets/img/recipe/recipe-img-1.svg';
-import RecipeImg2 from '../../assets/img/recipe/recipe-img-2.svg';
-import RecipeImg3 from '../../assets/img/recipe/recipe-img-3.svg';
-import RecipeImg4 from '../../assets/img/recipe/recipe-img-4.svg';
-import RecipeImg5 from '../../assets/img/recipe/recipe-img-5.svg';
-import RecipeImg6 from '../../assets/img/recipe/recipe-img-6.svg';
+import RecipeImg1 from '../../assets/img/recipe/recipe-img-1.png';
+import RecipeImg2 from '../../assets/img/recipe/recipe-img-2.png';
+import RecipeImg3 from '../../assets/img/recipe/recipe-img-3.png';
+import RecipeImg4 from '../../assets/img/recipe/recipe-img-4.png';
+import RecipeImg5 from '../../assets/img/recipe/recipe-img-5.png';
+import RecipeImg6 from '../../assets/img/recipe/recipe-img-6.png';
 import ArticleHeader from '../Shared/ArticleHeader';
 
 export default function RecipePage() {
@@ -31,7 +31,11 @@ export default function RecipePage() {
           {['keto kebabs', 'italian deserts', 'japanese flavors'].map(
             (element, index) => (
               <div key={`recipe-page-${element}-${index}-0`}>
-                <img src={getRecipeImg(index + 1)} alt="article-img-1" />
+                <img
+                  width={115}
+                  src={getRecipeImg(index + 1)}
+                  alt="article-img-1"
+                />
                 <ArticleHeader
                   btnText={element}
                   descriptionText={[
@@ -49,7 +53,11 @@ export default function RecipePage() {
           {['keto kebabs', 'italian deserts', 'japanese flavors'].map(
             (element, index) => (
               <div key={`recipe-page-${element}-${index}-1`}>
-                <img src={getRecipeImg(index + 4)} alt="article-img-1" />
+                <img
+                  width={115}
+                  src={getRecipeImg(index + 4)}
+                  alt="article-img-1"
+                />
                 <ArticleHeader
                   btnText={element}
                   descriptionText={[

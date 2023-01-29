@@ -1,9 +1,9 @@
 import React from 'react';
 import SectionHeader from '../Shared/SectionHeader';
-import MainArticleImg from '../../assets/img/article/article-main.svg';
-import ArticleImg1 from '../../assets/img/article/article-1.svg';
-import ArticleImg2 from '../../assets/img/article/article-2.svg';
-import ArticleImg3 from '../../assets/img/article/article-3.svg';
+import MainArticleImg from '../../assets/img/article/article-main.png';
+import ArticleImg1 from '../../assets/img/article/article-1.png';
+import ArticleImg2 from '../../assets/img/article/article-2.png';
+import ArticleImg3 from '../../assets/img/article/article-3.png';
 import ArticleHeader from '../Shared/ArticleHeader';
 
 export default function ArticlePage() {
@@ -29,7 +29,7 @@ export default function ArticlePage() {
       <SectionHeader text="2 rows: 1 x 3" textClass="text-secondary" />
       <section className="article-page primary-container">
         <div className="article-page-primary">
-          <img src={MainArticleImg} />
+          <img width={760} src={MainArticleImg} />
           <ArticleHeader
             btnText={'Travel'}
             titleText={titleText}
@@ -40,7 +40,11 @@ export default function ArticlePage() {
         <div className="article-page-secondary">
           {[1, 2, 3].map((element) => (
             <div key={'artice-page-secondary' + element}>
-              <img src={getArticleImg(element)} alt="article-img-1" />
+              <img
+                width={170}
+                src={getArticleImg(element)}
+                alt="article-img-1"
+              />
               <ArticleHeader
                 btnText={'Culture'}
                 descriptionText={[

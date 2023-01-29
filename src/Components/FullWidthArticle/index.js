@@ -1,6 +1,6 @@
 import React from 'react';
 import SectionHeader from '../Shared/SectionHeader';
-import FullArticleImg from '../../assets/img/full-width-article.svg';
+import FullArticleImg from '../../assets/img/full-width-article.png';
 
 export default function FullWidthArticle() {
   return (
@@ -9,7 +9,7 @@ export default function FullWidthArticle() {
       <section className="primary-container">
         <div className="full-width-article">
           <div className="full-width-img">
-            <img src={FullArticleImg} alt="full-width-article" />
+            <img width={1300} src={FullArticleImg} alt="full-width-article" />
           </div>
           <div className="btn btn-primary">Long Read</div>
           <div className="full-article-content">

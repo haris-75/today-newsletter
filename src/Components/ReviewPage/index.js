@@ -1,9 +1,9 @@
 import React from 'react';
 import SectionHeader from '../Shared/SectionHeader';
-import ReviewImg1 from '../../assets/img/review/review-img-1.svg';
-import ReviewImg2 from '../../assets/img/review/review-img-2.svg';
-import ReviewImg3 from '../../assets/img/review/review-img-3.svg';
-import ReviewImg4 from '../../assets/img/review/review-img-4.svg';
+import ReviewImg1 from '../../assets/img/review/review-img-1.png';
+import ReviewImg2 from '../../assets/img/review/review-img-2.png';
+import ReviewImg3 from '../../assets/img/review/review-img-3.png';
+import ReviewImg4 from '../../assets/img/review/review-img-4.png';
 import ArticleHeader from '../Shared/ArticleHeader';
 
 export default function ReviewPage() {
@@ -26,6 +26,7 @@ export default function ReviewPage() {
             <div className="review-item">
               <div className="review-img-wrapper">
                 <img
+                  width={280}
                   src={getReviewImg(element)}
                   alt={`review-img-${element}`}
                 />

@@ -2,10 +2,10 @@ import React from 'react';
 import SectionHeader from '../Shared/SectionHeader';
 import ArticleHeader from '../Shared/ArticleHeader';
 
-import PortraitImg1 from '../../assets/img/portrait/portrait-img-1.svg';
-import PortraitImg2 from '../../assets/img/portrait/portrait-img-2.svg';
-import PortraitImg3 from '../../assets/img/portrait/portrait-img-3.svg';
-import PortraitImg4 from '../../assets/img/portrait/portrait-img-4.svg';
+import PortraitImg1 from '../../assets/img/portrait/portrait-img-1.png';
+import PortraitImg2 from '../../assets/img/portrait/portrait-img-2.png';
+import PortraitImg3 from '../../assets/img/portrait/portrait-img-3.png';
+import PortraitImg4 from '../../assets/img/portrait/portrait-img-4.png';
 
 export default function PortraitPage() {
   const getPortraitImg = (idx) =>
@@ -27,7 +27,11 @@ export default function PortraitPage() {
           {['omar mukhtar', 'lil larry', 'lubna hamdan', 'shawn john'].map(
             (btnText, index) => (
               <div className="celebrity-img-wrapper" key={btnText}>
-                <img src={getPortraitImg(index + 1)} alt="celeb-img-1" />
+                <img
+                  width={280}
+                  src={getPortraitImg(index + 1)}
+                  alt="celeb-img-1"
+                />
                 <ArticleHeader
                   btnText={btnText}
                   descriptionText={[

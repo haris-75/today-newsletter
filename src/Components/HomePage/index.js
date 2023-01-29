@@ -1,7 +1,7 @@
 import React from 'react';
-import HomeImg1 from '../../assets/img/homepage/homepage-img-1.svg';
-import HomeImg2 from '../../assets/img/homepage/homepage-img-2.svg';
-import HomeImg3 from '../../assets/img/homepage/homepage-img-3.svg';
+import HomeImg1 from '../../assets/img/homepage/homepage-img-1.png';
+import HomeImg2 from '../../assets/img/homepage/homepage-img-2.png';
+import HomeImg3 from '../../assets/img/homepage/homepage-img-3.png';
 import ArticleHeader from '../Shared/ArticleHeader';
 
 export default function HomePage() {
@@ -50,7 +50,7 @@ export default function HomePage() {
           center
         />
         <div>
-          <img src={HomeImg1} alt="home-image-1" />
+          <img width={650} src={HomeImg1} alt="home-image-1" />
         </div>
       </div>
 
@@ -66,7 +66,7 @@ export default function HomePage() {
           author={'U.R Oliver'}
         />
         <div className="homepage-image-sm">
-          <img src={HomeImg2} alt="home-image-2" />
+          <img width={300} src={HomeImg2} alt="home-image-2" />
         </div>
         <ArticleHeader
           btnText={'Open House'}
@@ -77,7 +77,7 @@ export default function HomePage() {
 
       <div className="home-section-2">
         <div className="homepage-image-sm">
-          <img src={HomeImg3} alt="home-image-3" />
+          <img width={300} src={HomeImg3} alt="home-image-3" />
         </div>
         <ArticleHeader
           btnText={'Open House'}
