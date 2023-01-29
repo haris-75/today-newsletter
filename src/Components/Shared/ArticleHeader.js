@@ -11,7 +11,7 @@ export default function ArticleHeader({
     <div
       className={`article-header ${center ? 'text-center align-center' : ''}`}
     >
-      <div className="heading-btn">{btnText}</div>
+      <div className="btn btn-primary">{btnText}</div>
       {titleText ? (
         <div>
           {titleText.map((title, index) => (

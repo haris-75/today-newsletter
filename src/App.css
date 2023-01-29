@@ -29,6 +29,11 @@ body {
   color: var(--color-light);
 }
 
+/* .dark-theme > .btn-primary {
+  background: var(--color-light);
+  color: var(--color-dark);
+} */
+
 .section-header {
   font-family: 'Roboto';
   font-style: normal;
@@ -70,6 +75,26 @@ body {
   align-items: center;
 }
 
+.btn {
+  padding: 5px 14px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  width: fit-content;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  background: var(--color-dark);
+  color: var(--color-light);
+}
+
+.btn-primary-outline {
+  color: var(--color-dark);
+  border: 1px solid var(--color-dark);
+}
+
 /* Navbar */
 
 .navbar {
@@ -106,18 +131,6 @@ body {
   display: flex;
   gap: 30px;
   justify-content: center;
-}
-
-.heading-btn {
-  padding: 5px 14px;
-  background: var(--color-dark);
-  color: var(--color-light);
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 10px;
-  width: fit-content;
-  text-transform: uppercase;
 }
 
 .home-section-1 {
@@ -159,11 +172,25 @@ body {
   gap: 15px;
 }
 
+.article-header-secondary {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: end;
+}
+
 .author-name {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
+}
+
+.author-name-secondary {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 /* Celebrity Section */
@@ -226,7 +253,7 @@ body {
   margin: auto;
 }
 
-.full-width-article > .heading-btn {
+.full-width-article > .btn-primary {
   position: absolute;
   top: 30px;
 }
@@ -271,4 +298,91 @@ body {
 .full-article-content > .author-content {
   font-weight: 500;
   font-size: 16px;
+}
+
+/* Inverted Article */
+
+.invert-article-section {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+.invert-article-section > div {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Story Page */
+
+.glass-img-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Review Page */
+
+.review-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.review-img-wrapper {
+  display: flex;
+  position: relative;
+}
+.review-img-wrapper > .btn {
+  position: absolute;
+  bottom: 0;
+}
+
+/* Recipe Page */
+
+.recipe-page {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.recipe-page-secondary {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+.recipe-page-secondary > div {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+/* Footer */
+
+.footer {
+  font-family: 'Roboto';
+  border-top: none;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.footer-heading {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.footer-left {
+  display: flex;
+  gap: 130px;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 180px;
 }
