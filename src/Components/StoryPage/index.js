@@ -19,7 +19,7 @@ const StoryArticle = ({ left }) => (
     <div className={`btn ${left ? 'btn-primary-outline' : 'btn-primary'}`}>
       {left ? 'Half Empty' : 'Half Full'}
     </div>
-    <div>
+    <div className={`${left ? 'opacity-story' : ''}`}>
       {titleText.map((title, index) => (
         <div
           key={`${title}-heading-primary-${index}`}
@@ -29,7 +29,7 @@ const StoryArticle = ({ left }) => (
         </div>
       ))}
     </div>
-    <div>
+    <div className={`${left ? 'opacity-story' : ''}`}>
       {btnText.map((btnText, index) => (
         <div
           key={`${btnText}-heading-primary-${index}`}
