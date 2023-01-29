@@ -1,0 +1,274 @@
+:root {
+  --color-dark: #000000;
+  --color-light: #ffffff;
+
+  --bg-dark-primary: #3d3d3d;
+  --bg-light-primary: #fcfcf1;
+  --bg-dark-secondary: #aeaeac;
+  --bg-light-secondary: #f8f1e8;
+
+  --text-primary: #74bdb1;
+  --text-secondary: #f0c0c1;
+  --text-warning: #edc47f;
+  --text-danger: #dd6849;
+}
+
+/* Shared */
+
+body {
+  font-family: 'Roboto';
+}
+
+.light-theme {
+  background: var(--bg-light-primary);
+  color: var(--color-dark);
+}
+
+.dark-theme {
+  background: var(--bg-dark-primary);
+  color: var(--color-light);
+}
+
+.section-header {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-block: 11px;
+}
+
+.text-primary {
+  color: #74bdb1;
+}
+.text-secondary {
+  color: #f0c0c1;
+}
+.text-warning {
+  color: #edc47f;
+}
+.text-danger {
+  color: #dd6849;
+}
+
+.main-container {
+  padding-inline: 52px;
+}
+
+.primary-container {
+  padding-block: 40px;
+  border-top: 3px dashed var(--bg-dark-secondary);
+  border-bottom: 3px dashed var(--bg-dark-secondary);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+/* Navbar */
+
+.navbar {
+  font-family: 'Roboto';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  gap: 40px;
+  max-width: 100vw;
+}
+.navbar > nav {
+  font-size: 19px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.navbar > nav > ul {
+  list-style: none;
+  display: flex;
+  gap: 71px;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar > .nav-logo {
+  padding: 5px;
+}
+
+/* Homepage */
+
+.homepage {
+  max-width: 100vw;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.heading-btn {
+  padding: 5px 14px;
+  background: var(--color-dark);
+  color: var(--color-light);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  width: fit-content;
+  text-transform: uppercase;
+}
+
+.home-section-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
+.home-section-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+}
+
+.homepage-image-sm {
+  margin-bottom: -34px;
+  text-align: center;
+}
+
+/* Article Header */
+
+.heading-primary {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+}
+.heading-secondary {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.article-header {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.author-name {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+/* Celebrity Section */
+
+.celebrity-section {
+  background: var(--bg-light-secondary);
+  padding: 60px 94px;
+  display: flex;
+  gap: 44px;
+  justify-content: center;
+}
+
+.celebrity-img-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.celebrity-img-wrapper > span {
+  position: absolute;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #7b7b7b;
+}
+
+/* Article Page */
+
+.article-page {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.article-page-primary {
+  display: flex;
+  gap: 40px;
+}
+.article-page-primary > div:last-child {
+  margin-block: auto;
+}
+.article-page-secondary {
+  display: flex;
+  gap: 60px;
+}
+.article-page-secondary > div {
+  display: flex;
+  gap: 25px;
+}
+.article-page-secondary > div > img {
+  width: 200px;
+}
+
+/* Full Width Article */
+
+.full-width-article {
+  text-align: center;
+  position: relative;
+  width: fit-content;
+  margin: auto;
+}
+
+.full-width-article > .heading-btn {
+  position: absolute;
+  top: 30px;
+}
+.full-width-article > .full-width-img {
+  display: flex;
+}
+.full-width-article > .full-width-img::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #000000 31.83%, rgba(0, 0, 0, 0) 100%);
+  opacity: 0.6;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.full-article-content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  color: var(--color-light);
+  position: absolute;
+  left: 0;
+  bottom: 44px;
+  right: 0;
+}
+
+.full-article-content > div {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+}
+.full-article-content > .title-content {
+  font-weight: 500;
+  font-size: 20px;
+}
+.full-article-content > .author-content {
+  font-weight: 500;
+  font-size: 16px;
+}

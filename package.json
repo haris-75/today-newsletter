@@ -1,0 +1,55 @@
+{
+  "name": "today-newsletter",
+  "version": "1.0.0",
+  "description": "UI only website for a modern day newsletter",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "webpack-dev-server .",
+    "build": "webpack ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haris-75/today-newsletter.git"
+  },
+  "author": "Haris Ejaz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haris-75/today-newsletter/issues"
+  },
+  "dependencies": {
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.3",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
