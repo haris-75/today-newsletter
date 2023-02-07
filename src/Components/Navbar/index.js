@@ -1,19 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Logo from '../../assets/img/today-logo.svg';
-import Elipse from '../../assets/img/elipse.svg';
+import ElipseBlack from '../../assets/img/elipse-black.svg';
+import ElipseWhite from '../../assets/img/elipse-white.svg';
+import ThemeContext from '../../theme';
 
 export default function Navbar() {
-  const toggleTheme = () => {
-    var element = document.getElementById('BODY');
-    element.classList.toggle('light-theme');
-    element.classList.toggle('dark-theme');
-  };
+  const { checkThemeIsLight, toggleStyle } = useContext(ThemeContext);
+
   return (
     <div className="navbar">
       <img
         className="theme-toggler"
-        onClick={() => toggleTheme()}
-        src={Elipse}
+        onClick={() => toggleStyle()}
+        src={checkThemeIsLight() ? ElipseBlack : ElipseWhite}
         alt="elipse"
       />
       <div className="nav-logo">

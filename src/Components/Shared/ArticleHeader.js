@@ -1,4 +1,5 @@
 import React from 'react';
+import ThemeButton from './ThemeButton';
 
 export default function ArticleHeader({
   btnText,
@@ -11,7 +12,7 @@ export default function ArticleHeader({
     <div
       className={`article-header ${center ? 'text-center align-center' : ''}`}
     >
-      <div className="btn btn-primary">{btnText}</div>
+      <ThemeButton btnText={btnText} />
       {titleText ? (
         <div>
           {titleText.map((title, index) => (

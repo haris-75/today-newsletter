@@ -6,6 +6,7 @@ import PortraitImg1 from '../../assets/img/portrait/portrait-img-1.png';
 import PortraitImg2 from '../../assets/img/portrait/portrait-img-2.png';
 import PortraitImg3 from '../../assets/img/portrait/portrait-img-3.png';
 import PortraitImg4 from '../../assets/img/portrait/portrait-img-4.png';
+import SecondaryContainer from '../Shared/SecondaryContainer';
 
 export default function PortraitPage() {
   const getPortraitImg = (idx) =>
@@ -23,7 +24,7 @@ export default function PortraitPage() {
     <div>
       <SectionHeader text="1 row: 5 circles with bg" textClass="text-warning" />
       <section className="primary-container">
-        <div className="celebrity-section ">
+        <SecondaryContainer>
           {['omar mukhtar', 'lil larry', 'lubna hamdan', 'shawn john'].map(
             (btnText, index) => (
               <div className="celebrity-img-wrapper" key={btnText}>
@@ -45,7 +46,7 @@ export default function PortraitPage() {
               </div>
             )
           )}
-        </div>
+        </SecondaryContainer>
       </section>
     </div>
   );

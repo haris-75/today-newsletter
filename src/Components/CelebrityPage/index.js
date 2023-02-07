@@ -6,6 +6,7 @@ import CelebImg3 from '../../assets/img/celebrity/celebrity-3.png';
 import CelebImg4 from '../../assets/img/celebrity/celebrity-4.png';
 import CelebImg5 from '../../assets/img/celebrity/celebrity-5.png';
 import ArticleHeader from '../Shared/ArticleHeader';
+import SecondaryContainer from '../Shared/SecondaryContainer';
 
 export default function CelebrityPage() {
   const getCelebImg = (idx) =>
@@ -24,7 +25,7 @@ export default function CelebrityPage() {
     <div>
       <SectionHeader text="1 row: 5 circles with bg" textClass="text-warning" />
       <section className="primary-container">
-        <div className="celebrity-section ">
+        <SecondaryContainer>
           {[1, 2, 3, 4, 5].map((element) => (
             <div className="celebrity-img-wrapper" key={'celem-img' + element}>
               <span>{element}</span>
@@ -36,7 +37,7 @@ export default function CelebrityPage() {
               />
             </div>
           ))}
-        </div>
+        </SecondaryContainer>
       </section>
     </div>
   );

@@ -29,11 +29,6 @@ body {
   color: var(--color-light);
 }
 
-/* .dark-theme > .btn-primary {
-  background: var(--color-light);
-  color: var(--color-dark);
-} */
-
 .section-header {
   font-family: 'Roboto';
   font-style: normal;
@@ -90,9 +85,18 @@ body {
   color: var(--color-light);
 }
 
+.btn-primary-dark {
+  background: var(--color-light);
+  color: var(--color-dark);
+}
+
 .btn-primary-outline {
   color: var(--color-dark);
   border: 1px solid var(--color-dark);
+}
+.btn-primary-outline-dark {
+  color: var(--color-light);
+  border: 1px solid var(--color-light);
 }
 
 /* Navbar */
@@ -205,6 +209,22 @@ body {
 
 .celebrity-section {
   background: var(--bg-light-secondary);
+  padding: 60px 94px;
+  display: flex;
+  gap: 44px;
+  justify-content: center;
+}
+
+.secondary-container {
+  background: var(--bg-light-secondary);
+  padding: 60px 94px;
+  display: flex;
+  gap: 44px;
+  justify-content: center;
+}
+
+.secondary-container-dark {
+  background: var(--bg-dark-secondary);
   padding: 60px 94px;
   display: flex;
   gap: 44px;
@@ -329,6 +349,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.mul-color-blend {
+  mix-blend-mode: multiply;
+}
+.dodge-color-blend {
+  mix-blend-mode: color-dodge;
 }
 
 .opacity-story {

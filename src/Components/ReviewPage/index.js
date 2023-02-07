@@ -5,6 +5,8 @@ import ReviewImg2 from '../../assets/img/review/review-img-2.png';
 import ReviewImg3 from '../../assets/img/review/review-img-3.png';
 import ReviewImg4 from '../../assets/img/review/review-img-4.png';
 import ArticleHeader from '../Shared/ArticleHeader';
+import SecondaryContainer from '../Shared/SecondaryContainer';
+import ThemeButton from '../Shared/ThemeButton';
 
 export default function ReviewPage() {
   const getReviewImg = (idx) =>
@@ -21,7 +23,7 @@ export default function ReviewPage() {
     <div>
       <SectionHeader text="1 row: 4 reviews" textClass="text-primary" />
       <section className="primary-container">
-        <div className="celebrity-section">
+        <SecondaryContainer>
           {[1, 2, 3, 4].map((element) => (
             <div className="review-item">
               <div className="review-img-wrapper">
@@ -30,7 +32,7 @@ export default function ReviewPage() {
                   src={getReviewImg(element)}
                   alt={`review-img-${element}`}
                 />
-                <div className="btn btn-primary">4.4</div>
+                <ThemeButton btnText={'4.4'} />
               </div>
               <ArticleHeader
                 btnText={'Eat'}
@@ -43,7 +45,7 @@ export default function ReviewPage() {
               />
             </div>
           ))}
-        </div>
+        </SecondaryContainer>
       </section>
     </div>
   );
