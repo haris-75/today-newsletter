@@ -26,10 +26,16 @@ export default function ArticlePage() {
       : '';
   return (
     <div>
-      <SectionHeader text="2 rows: 1 x 3" textClass="text-secondary" />
-      <section className="article-page primary-container">
-        <div className="article-page-primary">
-          <img width={760} src={MainArticleImg} />
+      <SectionHeader
+        text='2 rows: 1 x 3'
+        textClass='text-secondary'
+      />
+      <section className='article-page primary-container'>
+        <div className='article-page-primary'>
+          <img
+            width={760}
+            src={MainArticleImg}
+          />
           <ArticleHeader
             btnText={'Travel'}
             titleText={titleText}
@@ -37,14 +43,17 @@ export default function ArticlePage() {
             author={'Cvita Doleschall'}
           />
         </div>
-        <div className="article-page-secondary">
+        <div className='article-page-secondary'>
           {[1, 2, 3].map((element) => (
             <div key={'artice-page-secondary' + element}>
-              <img
-                width={170}
-                src={getArticleImg(element)}
-                alt="article-img-1"
-              />
+              <div className='margin-auto'>
+                <img
+                  width={170}
+                  src={getArticleImg(element)}
+                  alt='article-img-1'
+                />
+              </div>
+
               <ArticleHeader
                 btnText={'Culture'}
                 descriptionText={[

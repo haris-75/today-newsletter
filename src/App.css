@@ -98,6 +98,9 @@ body {
   color: var(--color-light);
   border: 1px solid var(--color-light);
 }
+.margin-auto {
+  margin: auto;
+}
 
 /* Navbar */
 
@@ -160,7 +163,7 @@ body {
 
 .homepage-image-sm {
   margin-bottom: -34px;
-  text-align: center;
+  text-align: left;
 }
 
 /* Article Header */
@@ -235,6 +238,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  align-items: center;
 }
 
 .celebrity-img-wrapper > span {
@@ -426,4 +430,150 @@ body {
   display: flex;
   justify-content: center;
   gap: 180px;
+}
+
+/* Media Queries */
+
+/* Screen Size 1350px - 1100px */
+
+@media screen and (max-width: 1350px) and (min-width: 1100px) {
+  .home-section-1 > div > img {
+    width: 450px;
+  }
+  .homepage-image-sm > img {
+    width: 220px;
+  }
+
+  .celebrity-img-wrapper > img {
+    width: 155px;
+  }
+  .article-page-secondary > div > img {
+    width: 120px;
+  }
+  .article-page-primary > img {
+    width: 550px;
+  }
+  .invert-article-section > div > img {
+    width: 220px;
+  }
+  .full-width-img > img {
+    width: 1000px;
+  }
+  .glass-img-wrapper > img {
+    width: 350px;
+  }
+  .review-img-wrapper > img {
+    width: 200px;
+  }
+  .footer-bottom {
+    gap: 125px;
+  }
+}
+
+/* Screen Size 1099px - 900px */
+
+@media screen and (max-width: 1099px) and (min-width: 850px) {
+  .home-section-1 > div > img {
+    width: 450px;
+  }
+  .homepage-image-sm > img {
+    width: 220px;
+  }
+
+  .celebrity-img-wrapper > img {
+    width: 135px;
+  }
+  .article-page-secondary > div > img {
+    width: 120px;
+  }
+  .article-page-primary > img {
+    width: 550px;
+  }
+  .invert-article-section > div > img {
+    width: 220px;
+  }
+  .full-width-img > img {
+    width: 820px;
+  }
+  .glass-img-wrapper > img {
+    width: 350px;
+  }
+  .review-img-wrapper > img {
+    width: 200px;
+  }
+  .footer-bottom {
+    gap: 125px;
+  }
+}
+
+/* Screen Size 849px - 650px */
+
+@media screen and (max-width: 849px) and (min-width: 650px) {
+  .home-section-1 > div > img {
+    width: 450px;
+  }
+  .homepage-image-sm > img {
+    width: 220px;
+  }
+
+  .celebrity-img-wrapper > img {
+    width: 135px;
+  }
+  .article-page-secondary > div > img {
+    width: 120px;
+  }
+  .article-page-primary > img {
+    width: 550px;
+  }
+  .invert-article-section > div > img {
+    width: 220px;
+  }
+  .full-width-img > img {
+    width: 820px;
+  }
+  .glass-img-wrapper > img {
+    width: 350px;
+  }
+  .review-img-wrapper > img {
+    width: 200px;
+  }
+  .footer-bottom {
+    gap: 125px;
+  }
+}
+
+/* Screen Size upto 650px */
+
+@media screen and (max-width: 650px) {
+  .home-section-1 > div > img {
+    width: 450px;
+  }
+  .homepage-image-sm > img {
+    width: 220px;
+  }
+
+  .celebrity-img-wrapper > img {
+    width: 135px;
+  }
+  .article-page-secondary > div > img {
+    width: 120px;
+  }
+  .article-page-primary > img {
+    width: 550px;
+  }
+  .invert-article-section > div > img {
+    width: 220px;
+  }
+  .full-width-img > img {
+    width: 820px;
+  }
+  .glass-img-wrapper > img {
+    width: 350px;
+  }
+  .review-img-wrapper > img {
+    width: 200px;
+  }
+  .footer-bottom {
+    gap: 125px;
+  }
 }
